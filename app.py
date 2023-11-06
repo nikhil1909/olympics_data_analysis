@@ -37,7 +37,7 @@ if user_menu == 'Medal Tally':
         st.title(selected_country + " performance in " + str(selected_year) + " Olympics")
     st.table(medal_tally)
 
-if user_menu == 'Overall Analysis':
+'''if user_menu == 'Overall Analysis':
     editions = df['Year'].unique().shape[0] - 1
     cities = df['City'].unique().shape[0]
     sports = df['Sport'].unique().shape[0]
@@ -97,7 +97,7 @@ if user_menu == 'Overall Analysis':
 
     selected_sport = st.selectbox('Select a Sport',sport_list)
     x = helper.most_successful(df,selected_sport)
-    st.table(x)
+    st.table(x)'''
 
 if user_menu == 'Country-wise Analysis':
 
